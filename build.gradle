@@ -1,0 +1,25 @@
+plugins {
+    id "com.gradle.plugin-publish" version "0.10.1"
+    id "java-gradle-plugin"
+    id 'java'
+    id 'maven-publish'
+}
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+version = "0.0.8"
+group = "com.mentormate"
+
+dependencies {
+    implementation gradleApi()
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.11.1'
+    testImplementation 'org.mockito:mockito-core:2.24.0'
+    testImplementation 'io.cucumber:cucumber-java:6.10.0'
+    testImplementation 'io.cucumber:cucumber-junit:6.10.0'
+}
+
